@@ -7,8 +7,9 @@ import org.aspectj.lang.annotation.Before;
 public class PrintBeforeAdvice {
 	@Before("execution(* lab2.ex3.Product.*(..))")
 	public void before(JoinPoint jointPoint) {
-		System.out.println(jointPoint.getSignature().getDeclaringTypeName() +
+		System.out.println("This is before message: " + jointPoint.getSignature().getDeclaringTypeName() +
 				"." + jointPoint.getSignature().getName()
 				);
 	}
+
 }

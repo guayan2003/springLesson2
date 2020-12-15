@@ -19,6 +19,7 @@ public class Product {
 	}
 
 	public String getName() {
+		System.out.println("getName method called!!");
 		return name;
 	}
 

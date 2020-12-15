@@ -16,6 +16,8 @@
 	</bean>
 	
 	<bean id="printBeforeAdvice" class="lab2.ex3.PrintBeforeAdvice"/>
+	<bean id="printAfterAdvice" class="lab2.ex3.PrintAfterAdvice"/>
+	<bean id="printAroundAdvice" class="lab2.ex3.PrintAroundAdvice"/>
 	<!-- aop:config>
 		<aop:aspect id="print" ref="printBeforeAdvice">
 			<aop:before pointcut="execution(* lab2.ex3.Product.*(..))"
