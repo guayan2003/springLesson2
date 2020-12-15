@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Lab2 Ex1 Task 2-2 Start -->
+	<!--  bean id = "productA" class="lab2.ex1.Product">
+		<property name="productId" value="10001"/>
+		<property name="name" value="dog"/>
+		<property name="description" value="a dog"/>
+	</bean>
+	<bean id = "productB" class="lab2.ex1.Product">
+		<property name="productId" value="10002"/>
+		<property name="name" value="cat"/>
+		<property name="description" value="a cat"/>
+	</bean>	-->
+	<bean id = "productA" class="lab2.ex1.Product"
+		p:productId="10001"
+		p:name="dog"
+		p:description="a dog"
+	/>
+	<bean id = "productB" class="lab2.ex1.Product"
+		p:productId="10002"
+		p:name="cat"
+		p:description="a cat"
+	/>	
+	<bean id = "viewer1" class="lab2.ex1.SetterInjectionProductViewer">
+		<property name="product">
+			<ref bean="productB"/>
+		</property>
+	</bean>
+	<!-- Lab2 Ex1 Task 2-2 End -->
+    <!-- Lab2 Ex1 Task 4 Start -->
+	
+    <!-- Lab2 Ex1 Task 4 End -->
+    <!-- Lab2 Ex1 Task 5 Start -->
+	
+    <!-- Lab2 Ex1 Task 5 End -->
+</beans>
+
